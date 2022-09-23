@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Lo Lumvrise</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- inicia nav -->
+    <nav id="menu">
+        <a href="index.html">
+            <img src="../img/logob.png" alt="Logo de Lo Lumvrise">
+        </a>
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="cartelera.html">Cartelera</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ends nav -->
+
+    <!-- inicia header -->
+    <header>
+        <img src="../img/headers/contacto.png" alt="foto del trío cómico Lo Lumvrise en blanco y negro" class="encabezado__img--fluid">
+    </header>
+    <!-- ends header -->
+
+    <!-- inicia main -->
+    <main>
+        <section>
+            <div class="fondoBlack">
+                <h1 class="textCenter textVioleta"> Eventos de Humor donde quieras!!</h1>
+                <p>Envianos un mensaje y el mismo se autodestruirá en 10 segundos...</p>
+            </div>
+        </section>
+        <!-- inicia contacto -->
+        <section class="div__box--contacto">
+            <!-- inicia form -->
+            <div class="container__form">
+                <h2 class="textCenter textVioleta">Contactanos</h2>
+                <form action="envio.php" id="contacto">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name">
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel">
+                    <label for="mensaje">Deja tu mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <input type="reset" value="Cancelar">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <!-- ends form -->
+
+            <!-- inicia map -->
+            <div class="container__map">
+                <h2 class="textCenter textVioleta">Visitanos</h2>
+                <iframe aria-label="Ver Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8148648740157!2d-60.651839584813516!3d-32.95589698091837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab9a7b219941%3A0x9bc7b122f70306d3!2sKing%20Beer!5e0!3m2!1ses!2sar!4v1662806271271!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <!-- ends map -->
+
+        </section>
+        <!-- ends contacto -->
+
+    </main>
+    <!-- ends main -->
+    
+    <!-- inicia footer -->
+    <footer>
+        <div class="div__box--pie">
+            <section class="pie"> 
+                <a href="https://www.instagram.com/lolumvrise/" target="_blank">
+                    <img src="../img/icons/ig.png" alt="Seguinos en instagram">
+                </a>
+
+                <a href="https://www.facebook.com/lolumvrise" target="_blank">
+                    <img src="../img/icons/fb.png" alt="Seguinos en facebook">
+                </a>
+
+                <a href="https://www.youtube.com/c/LoLumvriseOk" target="_blank">
+                    <img src="../img/icons/yt.png" alt="Seguinos en Youtube">
+                </a>
+
+                <a href="https://api.whatsapp.com/message/7WRFKXTRXNVUL1?autoload=1&app_absent=0" target="_blank">
+                    <img src="../img/icons/wh.png" alt="Envianos un whatsapp">
+                </a>
+            </section>
+        </div>
+    </footer>
+    <!-- ends footer -->
+
+<!-- inicia WOW -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- ends WOW -->
+
+</body>
+</html>

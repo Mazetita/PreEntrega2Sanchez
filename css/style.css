@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-image: url(../img/backgrounds/bg.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 4rem;
+	color: rgb(255, 255, 255);
+}
+
+p {
+	color: rgb(255, 255, 255);
+	line-height: 2rem;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+header{
+	animation-name: textAlpha;
+	animation-duration: 3s;
+}
+
+#menu {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: sticky;
+	top: 0;
+	margin: 40px 0px;
+	padding: auto;
+	/*display flex*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	animation-name: textAlpha;
+	animation-duration: 3s;
+}
+
+#menu img{
+	padding-left: 20px;
+
+}
+
+nav ul {
+	/*display flex*/
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+	margin-right: 30px;
+}
+
+nav ul li a {
+	font-size: 1.8em;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	margin-right: 8px;
+	/*menu subrayado*/
+			  	background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .5s;
+}
+
+/*hover*/
+nav ul li a:hover {
+	color: rgb(189, 94, 243);
+	/*menu subrayado*/
+	background-size: 100% 2px;
+}
+
+.rotate:hover{
+	transform:rotateZ(25deg)
+}
+
+section {
+	display: flex;	
+	animation-name: textAlpha;
+	animation-duration: 3s;
+	}
+
+form label {
+	font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+	width: 12em;
+	text-align: left;
+	color: rgb(255, 255, 255);
+}
+
+section form {
+	margin: 2em 5em;
+	display: inline-block;
+	width: 12em
+}
+
+/* footer {
+	display: flex;
+} */
+
+/* clases camelCase  */
+
+.textBold {
+	font-weight: 600;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.textRight {
+	text-align: right;
+}
+
+.textLeft {
+	text-align: left;
+}
+
+.textRosa {
+	color: rgb(255, 82, 160);
+}
+
+.textCeleste {
+	color: rgb(82, 226, 255);
+}
+
+.textVioleta {
+	color: rgb(189, 94, 243);
+}
+
+.textBlanco {
+	color: rgb(255, 255, 255);
+}
+
+.textNegro {
+	color: rgb(0, 0, 0);
+}
+
+.fondoBlack {
+	width: 90%;
+	height: 100px;
+	margin: 20px auto;
+	padding: auto;
+	background-color: rgb(0, 0, 0);
+	border: solid rgb(189, 94, 243) 5px;
+	border-radius: 5px;
+	/* Flex */
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.fondoViolet p {
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+}
+
+/*Clases BEM */
+
+.div__box--pink {
+	width: 90%;
+	height: auto;
+	margin: 20px auto;
+	padding: 100px auto;
+	border: solid rgb(255, 82, 160) 5px;
+	border-radius: 5px;
+	/* Flex */
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.div__box--violet {
+	width: 90%;
+	height: auto;
+	margin: 20px auto;
+	padding: 100px auto;
+	border: solid rgb(189, 94, 243) 5px;
+	border-radius: 5px;
+	/* Flex */
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.div__box--blue {
+	width: 90%;
+	height: auto;
+	margin: 20px auto;
+	padding: 100px auto;
+	border: solid rgb(82, 226, 255) 5px;
+	border-radius: 5px;
+	/* Flex */
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.div__box--contacto {
+	width: 90%;
+	margin: 20px auto;
+	padding: auto;
+	border: solid rgb(189, 94, 243) 5px;
+	background-color: black;
+	border-radius: 5px;
+	/* Flex */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__form,
+.container__map {
+	width: 80%;
+	margin: 50px;
+	padding: auto;
+	border: solid rgb(189, 94, 243) 5px;
+	border-radius: 5px;
+	/* Flex */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.encabezado__img--fluid {
+	/*size*/
+	width: 100%;
+}
+
+.div__box--pie {
+	width: 100%;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: rgb(0, 0, 0);
+	border-radius: 5px;
+	/* Flex */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/**************Animaciones*/
+
+@keyframes textAlpha {
+	from{opacity: 0}
+	to{opacity: 1}
+	}
+
+
