@@ -32,30 +32,6 @@ p {
 	text-align: center;
 }
 
-header{
-	animation-name: textAlpha;
-	animation-duration: 3s;
-}
-
-#menu {
-	background-color: rgba(0, 0, 0, 0.8);
-	position: sticky;
-	top: 0;
-	margin: 40px 0px;
-	padding: auto;
-	/*display flex*/
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	animation-name: textAlpha;
-	animation-duration: 3s;
-}
-
-#menu img{
-	padding-left: 20px;
-
-}
-
 nav ul {
 	/*display flex*/
 	display: flex;
@@ -88,7 +64,7 @@ nav ul li a:hover {
 
 .rotate:hover{
 	transform:rotateZ(25deg)
-}
+} 
 
 section {
 	display: flex;	
@@ -110,9 +86,6 @@ section form {
 	width: 12em
 }
 
-/* footer {
-	display: flex;
-} */
 
 /* clases camelCase  */
 
@@ -247,18 +220,6 @@ section form {
 	width: 100%;
 }
 
-.div__box--pie {
-	width: 100%;
-	margin: 20px auto;
-	padding: 20px;
-	background-color: rgb(0, 0, 0);
-	border-radius: 5px;
-	/* Flex */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 /**************Animaciones*/
 
 @keyframes textAlpha {
@@ -266,4 +227,87 @@ section form {
 	to{opacity: 1}
 	}
 
+/* ------------------------Mobile First--------------- */
+/* Grids 1 y rows auto*/
+#contenedor {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows:auto;
+	grid-template-areas: 
+	"uno"
+	"dos"
+	"tres"
+	"cuatro"
+	"cinco"
+	"seis"
+	"siete"
+	"ocho"
+	"nueve"
+	;
+}
 
+#menu {
+	grid-area: uno;
+	
+}
+
+#portada {
+	grid-area: dos;
+}
+
+.show {
+	grid-area: tres;
+}
+
+.videos {
+	grid-area: cuatro;
+}
+
+.cartelera {
+	grid-area: cinco;
+}
+
+.bloque {
+	grid-area: seis;
+}
+
+.form {
+	grid-area: siete;
+}
+
+.map {
+	grid-area: ocho;
+}
+
+#pie {
+	grid-area: nueve;
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+		background-color: rgb(0, 0, 0);
+		border-radius: 5px;
+	} 
+	
+	.pie__icon--sm{
+		/*size*/
+		width: 30px;
+	}
+	
+#menu {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: sticky;
+	top: 0;
+	margin: 40px 0px;
+	padding: auto;
+	/*display flex*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	animation-name: textAlpha;
+	animation-duration: 3s;
+}
+
+header{
+	animation-name: textAlpha;
+	animation-duration: 3s;
+}

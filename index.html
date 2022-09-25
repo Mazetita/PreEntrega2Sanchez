@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lo Lumvrise - Grupo Cómico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,38 +17,38 @@
 
 <!-- inicia body -->
 <body>
+    <!-- inicia div de grid -->
+    <div id="contenedor"> 
     <!-- inicia nav -->
-    <nav id="menu">
-        <!-- inicia logo -->
-        <a href="index.html">
-            <img src="img/logob.png" alt="Logo de Lo Lumvrise">
-        </a>
-        <!-- ends logo -->
-
-        <!-- inicia list -->
-        <ul>
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="pages/nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="pages/videos.html">Videos</a>
-            </li>
-            <li>
-                <a href="pages/cartelera.html">Cartelera</a>
-            </li>
-            <li>
-                <a href="pages/contacto.html">Contacto</a>
-            </li>
-        </ul>
-        <!-- ends list -->
-    </nav>
-    <!-- ends nav -->
+    <nav class="navbar navbar-expand-sm bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/logob.png" alt="Logo de Lolumvrise">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>    <!-- ends nav -->
 
     <!-- inicia header -->
-    <header>
+    <header id="portada">
         <img class="encabezado__img--fluid" src="img/headers/home.png"
             alt="foto del trío cómico Lo Lumvrise en blanco y negro">
     </header>
@@ -56,19 +57,16 @@
     <!-- inicia main -->
     <main>
         <!-- inicia Nosotros -->
-        <section>
-            <div class="fondoBlack textCenter">
-				<h1 class="textCenter textVioleta wow swing">¿Alguna vez viste un show humorístico de Lo Lumvrise?</h1>
+            <div class="show div__box--violet fondoBlack textCenter wow bounceInDown">
+				<h1 class="textCenter textVioleta">¿Alguna vez viste un show humorístico de Lo Lumvrise?</h1>
                 <p>Nuestro <strong>humor sano</strong>, irónico, atípico y cotidiano, nunca ha pasado inadvertido.</p>
                 <p>¡Una propuesta diferente! con <em>scketchs originales y desopilantes actuaciones</em> que aportan una
                     gran dinámica a nuestras presentaciones.</p>
             </div>
-        </section>
         <!-- ends Nosotros -->
 
         <!-- inicia Videos -->
-        <section>
-            <div class="div__box--pink">
+            <div class="videos div__box--pink wow bounceInLeft">
                 <h2 class="textCenter textRosa"> Nuestros Videos</h2>
                 <p>Somos Damián “Pelu” Taborda, Hernán “Negro” Cigno y Pablo “Pachi” Fontana.</p>
                 <p>Escribimos, actuamos, dirigimos y producimos la totalidad de nuestros espectáculos.</p>
@@ -77,34 +75,28 @@
                             title="Video de Chistes cortos en Youtube" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </section>
             </div>
-        </section>
         <!-- ends Videos -->
 
         <!-- inicia Cartelera -->
-        <section>
-            <div class="div__box--blue">
+            <div class=" cartelera div__box--blue wow bounceInRight">
                 <h2 class="textCenter textCeleste">Cartelera de Espectáculos</h2>
                 <p>Enterate de todas nuestras próximas fechas donde estaremos presentando la nueva obra "Los Tr3s
                     Tarudos"</p>
             </div>
-        </section>
         <!-- ends Cartelera -->
 
         <!-- bloque intro -->
-        <section>
-            <div class="fondoBlack textCenter wow swing">
+            <div class="bloque fondoBlack textCenter wow bounceIn">
                 <h2>Querés contratar un show de humor para tu evento?</h2>
                 <p>Contactanos!!</p>
             </div>
-        </section>
         <!-- ends bloque intro -->
 
         <!-- inicia contacto -->
-        <section class="div__box--contacto">
+        <section class="form div__box--contacto wow bounceInUp">
             <!-- inicia form -->
-            <div class="container__form">
+            <div class="container__form wow bounceInLeft">
                 <h2 class="textCenter textVioleta">Contactanos</h2>
                 <form action="envio.php" id="contacto">
                     <label for="name">Nombre:</label>
@@ -122,7 +114,7 @@
             <!-- ends form -->
 
             <!-- inicia map -->
-            <div class="container__map">
+            <div class="map container__map wow bounceInRight">
                 <h2 class="textCenter textVioleta">Visitanos</h2>
                 <iframe aria-label="Ver Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8148648740157!2d-60.651839584813516!3d-32.95589698091837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab9a7b219941%3A0x9bc7b122f70306d3!2sKing%20Beer!5e0!3m2!1ses!2sar!4v1662806271271!5m2!1ses!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -138,22 +130,22 @@
     <!-- ends main -->
 
     <!-- inicia footer -->
-    <footer>
-        <div class="div__box--pie">
+    <footer id="pie">
+        <div class="wow fadeInDown">
             <a href="https://www.instagram.com/lolumvrise/" target="_blank">
-                <img src="img/icons/ig.png" alt="Seguinos en instagram">
+                <img src="img/icons/ig.png" alt="Seguinos en instagram" class="pie__icon--sm">
             </a>
 
             <a href="https://www.facebook.com/lolumvrise" target="_blank">
-                <img src="img/icons/fb.png" alt="Seguinos en facebookr">
+                <img src="img/icons/fb.png" alt="Seguinos en facebookr" class="pie__icon--sm">
             </a>
 
             <a href="https://www.youtube.com/c/LoLumvriseOk" target="_blank">
-                <img src="img/icons/yt.png" alt="Seguinos en youtube">
+                <img src="img/icons/yt.png" alt="Seguinos en youtube" class="pie__icon--sm">
             </a>
 
             <a href="https://api.whatsapp.com/message/7WRFKXTRXNVUL1?autoload=1&app_absent=0" target="_blank">
-                <img src="img/icons/wh.png" alt="envianos un whatsapp">
+                <img src="img/icons/wh.png" alt="envianos un whatsapp" class="pie__icon--sm">
             </a>
         </div>
     </footer>
@@ -165,7 +157,12 @@
     new WOW().init();
 </script>
 <!-- ends WOW -->
-    
+
+</div>
+<!-- termina div grid -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
